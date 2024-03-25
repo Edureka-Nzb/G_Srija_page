@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="fruits.css">
+
+</head>
+<header>
+	<div class="navbar">
+		<div class="logo">
+			<span>
+				<p>Grocery Store</p>
+			</span>
+		</div>
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="vegetable.html">
+						Vegetables
+					</a>
+				</li>
+				<li>
+					<a href="fruits.html">
+						Fruits
+					</a>
+				</li>
+				<li>
+					<a href="drinks.html">
+						Drinks
+					</a>
+				</li>
+				<li>
+					<a href="our packages.html">
+						Our pacages
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="search">
+			<input type="text" placeholder="Search products...">
+			<a href="sign up.html"><button>Sign up</button></a>
+
+
+		</div>
+	</div>
+</header>
+
+<body>
+	<!-- <script>
+		const product = [
+			{ id: 1, name: "strawberris", price: 500 },
+			{ id: 2, name: "Banana", price: 200 },
+			{ id: 3, name: "grapes", price: 700 },
+			{ id: 4, name: "mango", price: 100 },
+			{ id: 5, name: "pine apple", price: 450 },
+			{ id: 6, name: "promegranate", price: 870 },
+			{ id: 7, name: "orange", price: 470 },
+			{ id: 8, name: "water melon", price: 250 },
+
+		]
+		let cartItems = [];
+		function addToCart(productId) {
+			const productToAdd = product.find(product => product.Id === productId);
+			cartItems.push(productToAdd);
+			displayCart();
+		}
+		function displayCart() {
+			const shoppingCart = document.getElementById('shoppingCart');
+			shoppingCart.innerHTML = '';
+
+			cartItems.forEach(item => {
+				const cartItemDiv = document.createElement('div');
+				cartItemDiv.innerHTML = `<p>${item.name} -$ ${item.price.toFixed(8)}</p>`
+				shoppingCart.appendChild(cartItemDiv);
+			});
+		}
+	</script> -->
+
+	<section>
+		<h2 id="fruits">Fruits</h2>
+		<div class="category">
+			<div class="product" data-id="1">
+				<div class="image-placeholder image-placeholder5">
+					<img src="strawberries.jpeg" height="200px" width="300px" alt="grocery">
+				</div>
+				<h3>Straw berry</h3>
+				<h5>Antioxidants in strawberries, including vitamin C, can support your immune system 
+					and may lower your chances of getting sick when you're around germs</h5>
+				<p class="price">$2.49</p>
+				<div class="qyt">
+					<label for="quantity_fruit1">
+						Quantity:
+					</label>
+					<input type="number" id="quantity_fruit1" value="1">
+				</div>
+				<div class="productbtns">
+					<button class="add to cart" data-id="1">Add to cart</button>
+				
+					<!-- <button on click="alert('price=200');">Add to Cart</button> -->
+					
+				</div>
+			</div>
+
+			<div class="product">
+				<div class="image-placeholder 
+								image-placeholder6">
+					<img src="papaya.jpeg" height="200px" width="300px" alt="grocery">
+				</div>
+				<h3>Papaya</h3>
+				<H5> Papaya has many benefits, including protection against heart disease,
+					 reduced inflammation, aid in digestion, and boosting your immune system. </H5>
+				<p class="price">$0.99/1kg</p>
+				<div class="qyt">
+					<label for="quantity_fruit2">
+						Quantity:
+					</label>
+					<input type="number" id="quantity_fruit2" value="1">
+				</div>
+				<div class="productbtns">
+					<button>Add to Cart</button>
+					<!-- <button>Buy Now</button> -->
+				</div>
+			</div>
+
+			<div class="product">
+				<div class="image-placeholder 
+								image-placeholder7">
+					<img src="grapes.jpeg" alt="grocery">
+				</div>
+				<h3>Grapes</h3>
+				<h5>Grapes contain many important vitamins and minerals, including copper and vitamins B and K.
+					 2. May aid heart health. Grapes may boost heart health in several .</h5>
+				<p class="price">$7.79/1kg</p>
+				<div class="qyt">
+					<label for="quantity_fruit4">
+						Quantity:
+					</label>
+					<input type="number" id="quantity_fruit4" value="1">
+				</div>
+				<div class="productbtns">
+					<button>Add to Cart</button>
+					<!-- <button>Buy Now</button> -->
+				</div>
+			</div>
+			<div class="product">
+				<div class="image-placeholder 
+								image-placeholder7">
+					<img src="mango.jpeg" alt="grocery">
+				</div>
+				<h3>Mango</h3>
+				<h5>Mango is rich in vitamins, minerals, and antioxidants,
+					 and it has been associated with many health benefits ,control your blood pressure</h5>
+				<p class="price">$6.79/1kg</p>
+				<div class="qyt">
+					<label for="quantity_fruit4">
+						Quantity:
+					</label>
+					<input type="number" id="quantity_fruit4" value="1">
+				</div>
+				<div class="productbtns">
+					<button>Add to Cart</button>
+					<!-- <button>Buy Now</button> -->
+				</div>
+			</div>
+			<div class="product">
+				<div class="image-placeholder 
+								image-placeholder7">
+					<img src="pine apple.jpeg" alt="grocery">
+				</div>
+				<h3>Pine apple</h3>
+				<h5>The vitamins and minerals in pineapple could help shorten viral and bacterial infections and strengthen your bones. 
+					 pineapple may help prevent cancer</h5>
+				<p class="price">$1.79/1kg</p>
+				<div class="qyt">
+					<label for="quantity_fruit4">
+						Quantity:
+					</label>
+					<input type="number" id="quantity_fruit4" value="1">
+				</div>
+				<div class="productbtns">
+					<button>Add to Cart</button>
+					<!-- <button>Buy Now</button> -->
+				</div>
+			</div>
+			<div class="product">
+				<div class="image-placeholder 
+								image-placeholder7">
+					<img src="prome granate.jpeg" alt="grocery">
+				</div>
+				<h3>Promegranate</h3>
+				<h5>Eating pomegranates may protect heart health, support exercise performance, and promote brain function. 
+				   And provide a source of essential nutrients. </h5>
+				<p class="price">$4.79/1kg</p>
+				<div class="qyt">
+					<label for="quantity_fruit4">
+						Quantity:
+					</label>
+					<input type="number" id="quantity_fruit4" value="1">
+				</div>
+				<div class="productbtns">
+					<button>Add to Cart</button>
+					<!-- <button>Buy Now</button> -->
+				</div>
+			</div>
+			<div class="product">
+				<div class="image-placeholder 
+								image-placeholder7">
+					<img src="orange.jpeg" alt="grocery">
+				</div>
+				<h3>Orange</h3>
+				<h5>The vitamin C found in oranges has other health benefits too: Forms blood vessels, muscles, cartilage, and collagen in your bones.
+					 of conditions like asthma,</h5>
+				<p class="price">$6.79/1kg</p>
+				<div class="qyt">
+					<label for="quantity_fruit4">
+						Quantity:
+					</label>
+					<input type="number" id="quantity_fruit4" value="1">
+				</div>
+				<div class="productbtns">
+					<button>Add to Cart</button>
+					<!-- <button>Buy Now</button> -->
+				</div>
+			</div>
+			<div class="product">
+				<div class="image-placeholder 
+								image-placeholder7">
+					<img src="watermelon.jpeg" alt="grocery">
+				</div>
+				<h3>Water melon</h3>
+				<h5>Watermelon's high water content,and amino acids make for a better workout.
+					 It's also high in potassium, a mineral that could cut down on cramps at gym.</h5>
+				<p class="price">$7.79/1kg</p>
+				<div class="qyt">
+					<label for="quantity_fruit4">
+						Quantity:
+					</label>
+					<input type="number" id="quantity_fruit4" value="1">
+				</div>
+				<div class="productbtns">
+					<button>Add to Cart</button>
+					<!-- <button>Buy Now</button> -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+	<div class="category">
+		<button onclick="alert('price=300');">Add to cart</button>
+	</div>
+	</script>
+
+	<footer>
+		<p>© 2024 Grocery Store.
+			All rights reserved.
+		</p>
+	</footer> 
+
+
+</body>
+
+</html>
